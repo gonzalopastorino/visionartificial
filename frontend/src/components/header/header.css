@@ -1,0 +1,11 @@
+.text-gradient {
+  background: linear-gradient(to right,#13284D, #2b4470);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.15em;
+}
+
+.paths-container {
+  mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+}

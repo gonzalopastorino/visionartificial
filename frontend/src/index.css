@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+/* ==========================
+   GLOBAL
+========================== */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+
+
+/* ==========================
+   MATERIAL SYMBOLS
+========================== */
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+}
+
+
+/* ==========================
+   SMOOTH SCROLL
+========================== */
+
+html {
+  scroll-behavior: smooth;
+}
