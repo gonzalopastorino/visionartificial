@@ -11,6 +11,10 @@ dotenv.config();
 
 const app = express();
 
+console.log("=================================");
+console.log("BACKEND NUEVO - CORS ACTUALIZADO");
+console.log("=================================");
+
 
 
 app.use(cors({
