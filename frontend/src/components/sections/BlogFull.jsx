@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import CallToAction from "../sections/CalltoAction";
+import CallToAction from "../sections/CallToAction";
 
 
 const articles = [
