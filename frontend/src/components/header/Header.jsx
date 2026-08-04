@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AnimatedPaths from "./AnimatedPaths";
 import AnimatedTitle from "./AnimatedTitle";
 import "../../css/hero.css";
