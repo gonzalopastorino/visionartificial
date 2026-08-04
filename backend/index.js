@@ -13,17 +13,11 @@ const app = express();
 
 
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://visionartificial.vercel.app",
-    ],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
-
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 app.use(express.json());
 
