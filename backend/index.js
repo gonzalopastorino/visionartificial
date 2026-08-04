@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://tu-dominio.com",
+      "https://visionartificial.vercel.app",
     ],
   })
 );
