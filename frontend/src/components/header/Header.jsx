@@ -21,12 +21,12 @@ export default function Header() {
           >
             Solicita asesoría via WhatsApp →
           </a>
-          <a
-            href="/contacto"
-            className="text-[#13284D] border border-black/20 hover:border-[#6a5acd] px-[34px] py-[18px] rounded-xl font-bold transition text-[16px] hover:-translate-y-1"
+          <Link
+            to="/contacto"
+            className="text-[#13284D] border border-black/20 hover:border-[#6a5acd] px-8.5 py-4.5 rounded-xl font-bold transition text-[16px] hover:-translate-y-1"
           >
             Contáctanos via Formulario →
-          </a>
+          </Link>
         </div>
       </div>
     </header>
