@@ -19,6 +19,8 @@ app.use(
       "http://localhost:5173",
       "https://visionartificial.vercel.app",
     ],
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
@@ -505,10 +507,8 @@ app.post("/api/contact", contactLimiter, async (req,res)=>{
 
 
 
-app.listen(5000,()=>{
+const PORT = process.env.PORT || 5000;
 
-
-  console.log("Servidor corriendo en puerto 5000");
-
-
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en puerto ${PORT}`);
 });
