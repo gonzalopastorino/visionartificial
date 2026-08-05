@@ -11,17 +11,16 @@ dotenv.config();
 
 const app = express();
 
-console.log("=================================");
-console.log("BACKEND NUEVO - CORS ACTUALIZADO");
-console.log("=================================");
-
-
-
-app.use(cors({
-  origin: "*",
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://visionartificial.vercel.app",
+    ],
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(express.json());
 
@@ -38,7 +37,7 @@ const chatLimiter = rateLimit({
   message: {
     reply: "Demasiados mensajes. Esperá unos segundos.",
   },
-
+  
 });
 
 
